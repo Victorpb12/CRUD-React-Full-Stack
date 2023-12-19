@@ -2,9 +2,9 @@ import { toast, ToastContainer } from 'react-toastify';
 import { useState, useEffect } from 'react';
 import GlobalStyle from "./styles/global"; 
 import styled from 'styled-components';
-import Form from './components/form.js';
-import Grid from './components/Grid.js';
+import Grid from './components/grid/Grid.js';
 import axios from 'axios';
+import Form from './components/form/form.js';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -41,8 +41,8 @@ function App() {
     <>
       <Container>
         <Title>Cadastro de usuário</Title>
-        <Form/>
-        <Grid users={users} />
+        <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
+        <Grid users={users} setUsers={setUsers} setOnEdit={setOnEdit} />
       </Container>
       <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle/>
