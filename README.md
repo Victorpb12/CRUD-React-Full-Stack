@@ -20,7 +20,7 @@ Exclusão de Usuários: Remova usuários do sistema quando necessário.
 ## Como Executar o Projeto
 Clonar o Repositório:
 
-### git clone https://github.com/seu-usuario/seu-projeto.git
+### git clone https://github.com/Victorpb12/CRUD-React-Full-Stack.git
 
 ## Instalar Dependências:
 
